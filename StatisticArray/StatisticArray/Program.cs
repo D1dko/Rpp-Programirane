@@ -12,10 +12,15 @@ namespace StatisticArray
             {
                 arr[i] = int.Parse(Console.ReadLine());
             }
-            Console.WriteLine(OptionsManager.CountLess100(arr));
-            Console.WriteLine(OptionsManager.MaxNum(arr));
+            Console.WriteLine("Count= " + OptionsManager.CountLess100(arr));
+            Console.WriteLine("Max= " + OptionsManager.MaxNum(arr));
+            OptionsManager.EvenNums(arr);
+
+
             arr = OptionsManager.ReverseArr(arr);
-            OptionsManager.PtintArr(arr);
+            Console.WriteLine("sumEvens= " + OptionsManager.SumEvenNums(arr));
+            Console.WriteLine("countEvens= " + OptionsManager.CountEvenNums(arr));
+            OptionsManager.PrintArr(arr);
         }
     }
 }

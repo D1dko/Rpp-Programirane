@@ -20,7 +20,21 @@ namespace StatisticArray
         {
             return arr.Reverse().ToArray();
         }
-        public static void PtintArr(int[] arr)
+        public static void EvenNums(int[] arr)
+        {
+            var result = arr.Where(x => x % 2 == 0).ToArray();
+            Console.WriteLine(string.Join(", ", result));
+        }
+        public static int SumEvenNums(int[] arr)
+        {
+            return arr.Where(x => x % 2 == 0).Sum();
+
+        }
+        public static int CountEvenNums(int[] arr)
+        {
+            return arr.Where(x => x % 2 == 0).Count();
+        }
+        public static void PrintArr(int[] arr)
         {
             Console.WriteLine(string.Join(", ", arr));
         }
